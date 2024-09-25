@@ -46,11 +46,24 @@ public class Main
         Feeder j = new Feeder(2400);
         System.out.println(j.simulateManyDays(10, 4));
 
-        //Practice simulations
+        //Test simulations
+        Feeder a = new Feeder(500);
+        a.simulateOneDay(12);
+        System.out.println(a.getCurrentFood());
+
+        Feeder b = new Feeder(100);
+        b.simulateOneDay(22);
+        System.out.println(b.getCurrentFood());
+
+        Feeder c = new Feeder(100);
+        c.simulateOneDay(5);
+        System.out.println(b.getCurrentFood());
+
         Feeder k = new Feeder(250);
         System.out.println(k.simulateManyDays(10, 5));
+        
         Feeder l = new Feeder(0);
         System.out.println(l.simulateManyDays(5, 10));
-
+      
     }
 }
