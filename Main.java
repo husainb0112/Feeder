@@ -59,6 +59,9 @@ public class Main
         c.simulateOneDay(5);
         System.out.println(b.getCurrentFood());
 
+        Feeder d = new Feeder(2400);
+        System.out.println(d.simulateManyDays(10, 4));
+
         Feeder k = new Feeder(250);
         System.out.println(k.simulateManyDays(10, 5));
         
